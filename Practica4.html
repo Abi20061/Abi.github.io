@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layouts</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body{
+            font-family:'Courier New';
+        }
+        header{
+            background-color: cadetblue;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: rgb(19, 17, 16);
+        }
+        nav{
+            float: left;
+            width: 30%;
+            height: 300px;
+            background-color: rgb(159, 153, 196);
+            padding: 20px;
+        }
+        nav ul{
+            list-style-type: none;
+            padding: 0;
+        }
+        article{
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: rgb(126, 149, 192);
+            height: 300px;
+        }
+        section::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        footer{
+            background-color: rgb(62, 62, 66);
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+        @media(max-width: 600px){
+            nav,article{
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+       <h2>Robloxito mi vida!!!</h2> 
+    </header>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="">Juegos</a></li>
+                <li><a href="">Menu</a></li>
+                <li><a href="">Cuentanos tu historia</a></li>
+            </ul>
+        </nav>
+        <article>
+            <h1>A Y U D A</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero dolor itaque est quisquam nobis fugit, alias labore expedita earum autem ducimus voluptates repudiandae ea qui non neque debitis eum consectetur!
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quaerat, sint ratione, nam nulla quo porro provident officiis odit explicabo dolores quibusdam consequuntur iste hic mollitia. Dolorum veniam reiciendis at?
+            </p>
+        </article>
+    </section>
+    <footer>
+        <p>Robloxito mi vida!!! &copy; 2023</p>
+    </footer>
+    <h5> Giselle A. Gonzalez Estrada - Practica 4 &copy;</h5>
+</body>
+</html>
